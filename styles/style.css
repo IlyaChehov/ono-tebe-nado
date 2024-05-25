@@ -1,6 +1,9 @@
 address {
     margin: 0;
     padding: 0;
+}
+
+.address {
     font-size: 18px;
     font-style: normal;
     line-height: 135%;
@@ -56,10 +59,10 @@ address {
 
 .cover {
     position: relative;
-    z-index: -2;
+    z-index: 0;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
-    background-position: -133px;
+    background-position: center;
     background-size: cover;
 }
 
@@ -76,7 +79,6 @@ address {
 }
 
 .cover__title {
-    z-index: 1;
     padding: 161px 50px 126px;
     color: #fff;
     font-family: Raleway, sans-serif;
@@ -132,8 +134,10 @@ address {
 }
 
 .bet-button {
+    font-family: Raleway, sans-serif;
+    font-weight: normal;
     width: 256px;
-    height: 51px;
+    min-height: 51px;
     border: 1px solid #fff;
     color: #fff;
     font-weight: 500;
@@ -141,6 +145,7 @@ address {
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .lots__heading {
@@ -155,7 +160,6 @@ address {
 .lots__card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 563px;
     grid-column-gap: 25px;
 }
 
@@ -163,44 +167,36 @@ address {
     list-style: none;
 }
 
+.card-link {
+    text-decoration: none;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
 .card_type_film {
-    position: relative;
-    z-index: -2;
-    height: 100%;
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-position: -103px;
-    background-size: cover;
 }
 
 .card_type_book {
-    position: relative;
-    z-index: -2;
-    height: 100%;
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: -103px;
-    background-size: cover;
 }
 
 .card_type_picture {
-    position: relative;
-    z-index: -2;
-    height: 100%;
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: -102px;
-    background-size: cover;
 }
 
 .card__title {
-    z-index: 1;
+    z-index: 0;
     padding: 51px 40px 0 40px;
     color: #fff;
     font-family: Raleway, sans-serif;
